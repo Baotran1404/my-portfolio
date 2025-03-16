@@ -1,0 +1,144 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 2rem 0;
+}
+
+/* Navigation Bar */
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: calc(30% + 5%); /* Đồng bộ với About */
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    list-style: none;
+    background-color: #e8eef5; /* Giữ màu đồng nhất */
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+}
+
+.header-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-nav a:hover {
+    background-color: #d0d7e0;
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px; /* Giữ form có độ rộng phù hợp */
+    margin-left: 0; /* Căn trái */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Nút Send Message */
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* Bo tròn nút */
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Hiệu ứng zoom nhẹ khi hover */
+}
+
+/* Form Message */
+.hidden {
+    display: none;
+}
+
+#formMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Social Media */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+}
+
+.social-media ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-nav ul {
+        flex-wrap: wrap;
+    }
+}
